@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 model = YOLO('runs/detect/football_player_model_3/weights/best.pt')
-results = model.predict('sample_images/image.jpg')
+results = model.predict('sample_images/image.png')
 result = results[0]
 
 img = result.orig_img
